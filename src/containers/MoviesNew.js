@@ -18,14 +18,6 @@ class MoviesNew extends Component {
     this.props.history.push('/movies')
   }
 
-  // This destructuring may be useful in a messier function, but here? Meh. It actually adds more code than it supposedly saves.
-  // handleOnSubmit = event => {
-  //   event.preventDefault();
-  //   const { addMovie, history } = this.props;
-  //   addMovie(this.state);
-  //   history.push('/movies')
-  // }
-
   handleOnChange = event => {
     this.setState({
       title: event.target.value
